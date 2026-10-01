@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import { useContent } from "../content/context.js";
 
 /**
- * Primary booking action — goes to the Programări page.
- * Pass `service` to preselect it there (the page composes the WhatsApp message).
- * Without children, the label comes from „Date cabinet”.
+ * Booking action for one specific service — goes to the Programări page with
+ * it preselected, and that page composes the WhatsApp message. Contactul
+ * general se face din butonul flotant de WhatsApp.
  */
 export default function BookButton({
   service = "",
@@ -12,14 +11,13 @@ export default function BookButton({
   className = "cta",
   onClick,
 }) {
-  const { site } = useContent();
   const to = service
     ? `/programari?serviciu=${encodeURIComponent(service)}`
     : "/programari";
 
   return (
     <Link className={className} to={to} onClick={onClick}>
-      {children || site.bookButtonLabel}
+      {children}
     </Link>
   );
 }

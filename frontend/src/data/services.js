@@ -214,7 +214,7 @@ export const DOMAINS = [
   },
   {
     id: "companii",
-    number: "05",
+    number: "PACHET",
     title: "Servicii pentru companii și organizații",
     body: "Colaborări cu angajatori și instituții pentru evaluarea și selecția personalului, în funcție de specificul posturilor și al solicitării. Tariful se stabilește printr-o ofertă personalizată.",
     highlights: COMPANY_SERVICES,

@@ -209,7 +209,6 @@ export const pages = {
     emptyTitle: "În curând",
     emptyBody:
       "Până la publicarea primelor articole, îmi poți scrie direct dacă ai o întrebare despre serviciile oferite.",
-    emptyCtaLabel: "Contactează-mă",
     readMoreLabel: "Citește articolul →",
 
     // Pagina unui articol

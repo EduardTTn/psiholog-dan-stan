@@ -135,7 +135,6 @@ export default function Tarife() {
               <p key={paragraph.slice(0, 40)}>{paragraph}</p>
             ))}
             <p className="infoNoteContact">{copy.infoContact}</p>
-            <BookButton />
           </Reveal>
         </div>
       </section>

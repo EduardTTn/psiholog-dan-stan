@@ -24,8 +24,8 @@ schimbările sunt doar ciornă — site-ul rămâne neatins, deci poți lucra li
 
 | Secțiune | Ce se schimbă de acolo |
 |---|---|
-| **Date cabinet** | Nume, titlu profesional, telefon, e-mail, numărul de WhatsApp, programul, textul butonului de programare, mențiunea pentru situații de urgență. |
-| **Meniu** | Ce scrie pe fiecare link din meniul de sus și din subsol, și în ce ordine apar. |
+| **Date cabinet** | Nume, titlu profesional, telefon, e-mail, numărul de WhatsApp, programul, mesajul cu care se deschide butonul verde de WhatsApp, mențiunea pentru situații de urgență. |
+| **Meniu** | Ce scrie pe fiecare link și în ce ordine apar. Aceeași listă se folosește în bara de sus și în subsol, deci o modificare se vede în ambele locuri. |
 | **Textul paginilor** | Tot ce se citește pe fiecare pagină: titluri, paragrafe, texte de pe butoane, etichetele formularului de programare, mesajul trimis pe WhatsApp și felul în care arată pagina în Google. |
 | **Servicii și tarife** | Fiecare serviciu: denumire, descriere, preț, durată, categoria din care face parte. |
 | **Categorii** | Cele cinci direcții de lucru — titlu, descriere, lista de puncte, ordinea. |
@@ -38,7 +38,7 @@ schimbările sunt doar ciornă — site-ul rămâne neatins, deci poți lucra li
 
 **Numele tău se scrie o singură dată.** În textele lungi poți folosi `{nume}`,
 `{titlu}` sau `{titluMic}` — pe site apar completate din *Date cabinet*. De
-exemplu „Sunt {nume}, {titluMic}.” devine „Sunt Stan Dan, psiholog clinician.”
+exemplu „Sunt {nume}, {titluMic}.” devine „Sunt Dan Stan, psiholog clinician.”
 Dacă îți schimbi titlul profesional, se schimbă în toate paragrafele deodată.
 
 **Un articol nou de blog** apare pe site doar după ce are titlu, *slug*
@@ -65,6 +65,11 @@ doar dacă l-a completat.
 din tab*, pliată la finalul fiecărei pagini. Titlul ține sub 60 de caractere,
 descrierea sub 160 — peste atât, Google taie. Pentru articole, descrierea e
 rezumatul articolului.
+
+**Butonul verde de WhatsApp** din colțul din dreapta jos apare pe toate
+paginile, în afară de pagina Programări (acolo formularul compune deja un mesaj
+mai detaliat). Textul cu care se deschide conversația se schimbă din *Date
+cabinet → Mesajul implicit de pe WhatsApp*.
 
 **Opțiunile din formularul de programare** („La cabinet”/„Online”,
 „Dimineața”…) se editează ca listă. La modalitate e selectată implicit prima

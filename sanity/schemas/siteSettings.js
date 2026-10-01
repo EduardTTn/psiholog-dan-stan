@@ -60,12 +60,6 @@ export default {
       description: "Ex: Luni–Vineri · 09:00–18:00",
     },
     {
-      name: "bookButtonLabel",
-      title: "Textul butonului de programare",
-      type: "string",
-      description: "Butonul care apare în meniu și pe toate paginile.",
-    },
-    {
       name: "whatsappLinkLabel",
       title: "Textul linkului de WhatsApp din subsol",
       type: "string",

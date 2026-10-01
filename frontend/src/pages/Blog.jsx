@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import BookButton from "../components/BookButton.jsx";
 import Reveal from "../components/Reveal.jsx";
 import { useContent } from "../content/context.js";
 import { useDocumentMeta } from "../content/useDocumentMeta.js";
@@ -29,7 +28,6 @@ export default function Blog() {
             <Reveal className="emptyState" as="div">
               <h2 className="infoTitle">{copy.emptyTitle}</h2>
               <p className="priceCardBody">{copy.emptyBody}</p>
-              <BookButton>{copy.emptyCtaLabel}</BookButton>
             </Reveal>
           ) : (
             <div className="postGrid">

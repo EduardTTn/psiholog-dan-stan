@@ -13,7 +13,6 @@ export default {
         "Se vede doar cât timp nu e publicat niciun articol.",
     },
     { name: "emptyBody", title: "Când nu există articole — text", type: "text", rows: 3 },
-    { name: "emptyCtaLabel", title: "Când nu există articole — text buton", type: "string" },
     {
       name: "readMoreLabel",
       title: "Linkul din cardul de articol",

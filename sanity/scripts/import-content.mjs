@@ -71,7 +71,6 @@ docs.push({
   whatsapp: site.whatsapp,
   address: site.address,
   hours: site.hours,
-  bookButtonLabel: site.bookButtonLabel,
   whatsappLinkLabel: site.whatsappLinkLabel,
   whatsappGreeting: site.whatsappGreeting,
   metaDescription: site.metaDescription,
@@ -117,10 +116,6 @@ docs.push({
   _id: "navigation",
   _type: "navigation",
   primary: keyed(navigation.primary, "navLink"),
-  footer: keyed(navigation.footer, "navLink").map((l, i) => ({
-    ...l,
-    _key: `navLink-footer-${i + 1}`,
-  })),
 });
 
 // 2. Categories — including "companii", which has no priced services

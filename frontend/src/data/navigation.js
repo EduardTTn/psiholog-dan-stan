@@ -1,19 +1,15 @@
 /**
- * Meniul principal și cel din subsol. Rutele sunt fixe — ele există în cod
- * ([App.jsx](../App.jsx)) — editabile sunt eticheta și ordinea.
+ * Meniul site-ului. Aceeași listă apare în bara de sus și în subsol.
+ * Rutele sunt fixe — ele există în cod ([App.jsx](../App.jsx)); editabile sunt
+ * eticheta și ordinea.
  */
 export const navigation = {
   primary: [
     { path: "/", label: "Acasă" },
     { path: "/despre", label: "Despre mine" },
-    { path: "/blog", label: "Blog" },
     { path: "/servicii", label: "Servicii" },
     { path: "/tarife", label: "Tarife" },
-  ],
-  footer: [
-    { path: "/despre", label: "Despre mine" },
-    { path: "/servicii", label: "Servicii" },
-    { path: "/tarife", label: "Tarife" },
+    { path: "/programari", label: "Programări" },
     { path: "/blog", label: "Blog" },
   ],
 };

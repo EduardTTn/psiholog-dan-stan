@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import BookButton from "../components/BookButton.jsx";
 import Reveal from "../components/Reveal.jsx";
 import { useContent } from "../content/context.js";
 import { useDocumentMeta } from "../content/useDocumentMeta.js";
@@ -18,7 +17,6 @@ export default function Servicii() {
             <h1 className="h1 pageH1">{copy.heroTitle}</h1>
             <p className="lead">{copy.heroLead}</p>
             <div className="heroActions">
-              <BookButton />
               <Link className="secondaryBtn" to="/tarife">
                 {copy.heroSecondaryLabel}
               </Link>
@@ -58,7 +56,6 @@ export default function Servicii() {
               <h2 className="ctaBandTitle">{copy.cta.title}</h2>
               <p className="ctaBandBody">{copy.cta.body}</p>
             </div>
-            <BookButton />
           </Reveal>
         </div>
       </section>

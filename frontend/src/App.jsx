@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Footer from "./components/Footer.jsx";
 import NavBar from "./components/NavBar.jsx";
+import WhatsAppWidget from "./components/WhatsAppWidget.jsx";
 import Blog from "./pages/Blog.jsx";
 import BlogPost from "./pages/BlogPost.jsx";
 import Despre from "./pages/Despre.jsx";
@@ -39,6 +40,7 @@ export default function App() {
         <Route path="*" element={<Home />} />
       </Routes>
       <Footer />
+      <WhatsAppWidget />
     </>
   );
 }

@@ -2,11 +2,10 @@
 export const CONTENT_QUERY = /* groq */ `{
   "site": *[_type == "siteSettings"][0]{
     name, title, cabinet, email, phone, whatsapp, address, hours, emergencyNote,
-    bookButtonLabel, whatsappLinkLabel, whatsappGreeting, metaDescription
+    whatsappLinkLabel, whatsappGreeting, metaDescription
   },
   "navigation": *[_type == "navigation"][0]{
-    primary[]{ label, path },
-    footer[]{ label, path }
+    primary[]{ label, path }
   },
   "pages": {
     "home": *[_type == "pageHome"][0]{
@@ -48,7 +47,7 @@ export const CONTENT_QUERY = /* groq */ `{
       seo{ metaTitle, metaDescription }
     },
     "blog": *[_type == "pageBlog"][0]{
-      heroTitle, heroLead, emptyTitle, emptyBody, emptyCtaLabel, readMoreLabel,
+      heroTitle, heroLead, emptyTitle, emptyBody, readMoreLabel,
       postBackLabel, postLoadingLabel, postErrorLabel,
       postNotFoundTitle, postNotFoundBody, postCta{ title, body },
       seo{ metaTitle, metaDescription }

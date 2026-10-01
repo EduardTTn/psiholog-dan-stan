@@ -29,7 +29,7 @@ const singletonItem = (S, { id, type, title }) =>
 
 export default defineConfig({
   name: "default",
-  title: "Cabinet Stan Dan",
+  title: "Cabinet Dan Stan",
   projectId,
   dataset,
 

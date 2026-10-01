@@ -1,4 +1,4 @@
-# Site cabinet psihologie — Stan Dan
+# Site cabinet psihologie — Dan Stan
 
 Un site static (React + Vite) plus un studio de conținut (Sanity). Nu există
 server de aplicație și nici bază de date de întreținut: site-ul se publică ca
@@ -24,8 +24,8 @@ Site-ul citește din Sanity doar dacă `VITE_SANITY_PROJECT_ID` este setat în
 
 | Ce | Unde se editează | Fallback în cod |
 |---|---|---|
-| Nume, contact, program, mențiunea de urgență, textul butonului de programare, descrierea implicită pentru Google | Sanity → *Date cabinet* | `frontend/src/data/site.js` |
-| Meniul de sus și cel din subsol (etichete și ordine) | Sanity → *Meniu* | `frontend/src/data/navigation.js` |
+| Nume, contact, program, mențiunea de urgență, mesajul butonului flotant de WhatsApp, descrierea implicită pentru Google | Sanity → *Date cabinet* | `frontend/src/data/site.js` |
+| Meniul (etichete și ordine) — aceeași listă apare sus și în subsol | Sanity → *Meniu* | `frontend/src/data/navigation.js` |
 | Textul fiecărei pagini: titluri, paragrafe, butoane, etichetele formularului, mesajul de WhatsApp, titlul din tab și descrierea pentru Google | Sanity → *Textul paginilor* | `frontend/src/data/pages.js` |
 | Servicii, tarife, categorii | Sanity → *Servicii și tarife*, *Categorii* | `frontend/src/data/services.js` |
 | Adresele cabinetelor și hărțile | Sanity → *Cabinete* | `frontend/src/data/site.js` |

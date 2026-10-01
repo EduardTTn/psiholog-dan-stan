@@ -1274,6 +1274,63 @@
   background: rgba(232, 214, 193, 0.6);
 }
 
+/* ---------- Buton flotant de WhatsApp ---------- */
+
+.waWidget {
+  position: fixed;
+  right: max(18px, env(safe-area-inset-right, 0px));
+  bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+  z-index: 30;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #25d366;
+  color: #fff;
+  border: 1px solid rgba(20, 38, 48, 0.12);
+  box-shadow: 0 10px 24px rgba(20, 38, 48, 0.28);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.waWidget:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 16px 30px rgba(20, 38, 48, 0.34);
+}
+
+.waWidget:focus-visible {
+  outline: 3px solid rgba(37, 211, 102, 0.45);
+  outline-offset: 3px;
+}
+
+.waWidgetIcon svg {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+@media (max-width: 560px) {
+  .waWidget {
+    width: 52px;
+    height: 52px;
+    right: max(14px, env(safe-area-inset-right, 0px));
+    bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .waWidgetIcon svg {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .waWidget,
+  .waWidget:hover {
+    transition: none;
+    transform: none;
+  }
+}
+
 /* ---------- Blog ---------- */
 
 .emptyState {

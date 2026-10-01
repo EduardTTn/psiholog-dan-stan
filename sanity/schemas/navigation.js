@@ -5,17 +5,11 @@ export default {
   fields: [
     {
       name: "primary",
-      title: "Meniul principal (sus)",
+      title: "Linkurile meniului",
       type: "array",
       of: [{ type: "navLink" }],
       description:
-        "Ordinea din listă e ordinea din meniu. Butonul de programare apare automat la final.",
-    },
-    {
-      name: "footer",
-      title: "Meniul din subsol",
-      type: "array",
-      of: [{ type: "navLink" }],
+        "Aceeași listă apare în bara de sus și în subsol. Ordinea din listă e ordinea de pe site.",
     },
   ],
   preview: { prepare: () => ({ title: "Meniu" }) },

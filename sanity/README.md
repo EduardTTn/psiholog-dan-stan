@@ -1,4 +1,4 @@
-# Studio de conținut — Cabinet Stan Dan
+# Studio de conținut — Cabinet Dan Stan
 
 Aici se editează **tot** conținutul site-ului: datele cabinetului, textul
 fiecărei pagini, serviciile și tarifele, adresele cabinetelor, articolele de
@@ -63,8 +63,8 @@ sunt servite din CDN). Nu e nevoie de redeploy al site-ului.
 
 | Tip | Titlu în studio | Note |
 |---|---|---|
-| `siteSettings` | Date cabinet | Singleton. Nume, contact, program, textul butonului de programare, mesajul implicit de WhatsApp, descrierea implicită pentru Google, mențiunea de urgență. |
-| `navigation` | Meniu | Singleton. Etichetele și ordinea linkurilor; ruta se alege din lista fixă din `schemas/navLink.js`. |
+| `siteSettings` | Date cabinet | Singleton. Nume, contact, program, mesajul cu care se deschide butonul flotant de WhatsApp, descrierea implicită pentru Google, mențiunea de urgență. |
+| `navigation` | Meniu | Singleton. O singură listă, folosită atât în bara de sus cât și în subsol; ruta se alege din lista fixă din `schemas/navLink.js`. |
 | `pageHome` … `pageBlog` | Textul paginilor | Câte un singleton pe pagină — tot textul vizibil, inclusiv butoane, etichetele formularului de programare, mesajul de WhatsApp (`whatsappMessage`) și câmpurile SEO (`seo`). Textele acceptă `{nume}`, `{titlu}`, `{titluMic}`. |
 | `service` / `serviceCategory` | Servicii și tarife / Categorii | Serviciul trimite la categorie prin referință. |
 | `location` | Cabinete | Orașul și strada; harta se construiește din ele. |

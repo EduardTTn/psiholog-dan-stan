@@ -23,7 +23,7 @@ export default function Footer() {
         </div>
 
         <nav className="footerNav" aria-label="Navigare secundară">
-          {navigation.footer.map((l) => (
+          {navigation.primary.map((l) => (
             <Link key={l.path} to={l.path}>
               {l.label}
             </Link>

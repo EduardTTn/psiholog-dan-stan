@@ -1,7 +1,7 @@
 export const site = {
-  name: "Stan Dan",
+  name: "Dan Stan",
   title: "Psiholog clinician",
-  cabinet: "Cabinet Individual de Psihologie Stan Dan",
+  cabinet: "Cabinet Individual de Psihologie Dan Stan",
   email: "contact@psiholog-stan-dan.ro",
   phone: "0740 278 926",
   whatsapp: "40740278926",
@@ -9,14 +9,12 @@ export const site = {
   hours: "Luni–Vineri · 09:00–18:00",
   emergencyNote:
     "În situații de urgență sau criză, contactați imediat serviciile de urgență (112).",
-  // Textul butonului de programare, peste tot pe site.
-  bookButtonLabel: "Programează o ședință",
   // Linkul de WhatsApp din subsol și mesajul cu care se deschide.
   whatsappLinkLabel: "WhatsApp",
   whatsappGreeting: "Bună ziua! Aș dori o programare.",
   // Descrierea implicită pentru Google, când o pagină nu are una proprie.
   metaDescription:
-    "Cabinet de psihologie Stan Dan — evaluare psihologică clinică, consiliere psihologică, psihologia muncii și evaluări pentru domeniul securității naționale.",
+    "Cabinet de psihologie Dan Stan — evaluare psihologică clinică, consiliere psihologică, psihologia muncii și evaluări pentru domeniul securității naționale.",
 };
 
 export const socials = [

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import BookButton from "../components/BookButton.jsx";
 import Reveal from "../components/Reveal.jsx";
 import portrait from "../assets/dan-stan.jpg";
 import { fill, useContent } from "../content/context.js";
@@ -39,7 +38,6 @@ export default function Home() {
             <h1 className="h1">{copy.heroTitle}</h1>
             <p className="lead">{copy.heroLead}</p>
             <div className="heroActions">
-              <BookButton />
               <Link className="secondaryBtn" to="/servicii">
                 {copy.heroSecondaryLabel}
               </Link>
@@ -140,7 +138,6 @@ export default function Home() {
               <h2 className="ctaBandTitle">{copy.cta.title}</h2>
               <p className="ctaBandBody">{copy.cta.body}</p>
             </div>
-            <BookButton />
           </Reveal>
         </div>
       </section>

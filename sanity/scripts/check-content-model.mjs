@@ -106,7 +106,7 @@ for (const option of ROUTE_OPTIONS) {
     fail(`navLink: ruta ${path} e oferită în studio, dar nu există în App.jsx`);
   }
 }
-for (const link of [...navigation.primary, ...navigation.footer]) {
+for (const link of navigation.primary) {
   if (!ROUTE_OPTIONS.some((o) => o.value === link.path)) {
     fail(`navigation: „${link.label}” trimite la ${link.path}, care nu e în lista de rute`);
   }
@@ -115,8 +115,8 @@ for (const link of [...navigation.primary, ...navigation.footer]) {
 /* ---------- 3. Plasa de siguranță: un studio pe jumătate completat ---------- */
 
 const sparse = {
-  site: { name: "Stan Dan", bookButtonLabel: "", whatsappGreeting: null },
-  navigation: { primary: [{ label: "Prima pagină", path: "/" }], footer: [] },
+  site: { name: "Dan Stan", whatsappLinkLabel: "", whatsappGreeting: null },
+  navigation: { primary: [] },
   pages: {
     home: { heroTitle: "Titlu nou", servicesAllLabel: "", seo: { metaTitle: "" } },
     booking: { modalities: ["La sediu"], intervals: [], message: { closing: "" } },
@@ -134,9 +134,9 @@ const sparse = {
 const merged = merge(LOCAL_CONTENT, sparse);
 
 const expectations = [
-  ["site.bookButtonLabel", merged.site.bookButtonLabel, site.bookButtonLabel],
+  ["site.whatsappLinkLabel", merged.site.whatsappLinkLabel, site.whatsappLinkLabel],
   ["site.whatsappGreeting", merged.site.whatsappGreeting, site.whatsappGreeting],
-  ["navigation.footer", merged.navigation.footer.length, navigation.footer.length],
+  ["navigation.primary (emptied)", merged.navigation.primary.length, navigation.primary.length],
   ["pages.home.heroTitle", merged.pages.home.heroTitle, "Titlu nou"],
   ["pages.home.servicesAllLabel", merged.pages.home.servicesAllLabel, pages.home.servicesAllLabel],
   ["pages.home.seo.metaTitle", merged.pages.home.seo.metaTitle, pages.home.seo.metaTitle],
