@@ -33,6 +33,11 @@ export default defineConfig({
   projectId,
   dataset,
 
+  /* Studioul e servit sub /studio (vezi vercel.json din rădăcină). Fără
+     basePath, rutele interne și fișierele lui ar fi căutate în rădăcina
+     domeniului. Afectează și `npm run dev`: http://localhost:3333/studio */
+  basePath: "/studio",
+
   plugins: [
     structureTool({
       structure: (S) =>
