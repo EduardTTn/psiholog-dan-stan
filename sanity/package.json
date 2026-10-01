@@ -1,0 +1,25 @@
+{
+  "name": "psiholog-stan-dan-studio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "import": "node scripts/import-content.mjs",
+    "check": "node scripts/check-content-model.mjs"
+  },
+  "dependencies": {
+    "@sanity/client": "^8.6.2",
+    "@sanity/vision": "^6.17.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "sanity": "^6.17.0",
+    "styled-components": "^6.1.15"
+  },
+  "devDependencies": {
+    "dotenv": "^17.0.0"
+  }
+}

@@ -1,0 +1,40 @@
+export default {
+  name: "pageAbout",
+  title: "Pagina Despre mine",
+  type: "document",
+  fields: [
+    { name: "heroTitle", title: "Titlu principal", type: "text", rows: 2 },
+    {
+      name: "heroLead",
+      title: "Text introductiv",
+      type: "text",
+      rows: 3,
+      description: "Opțional — dacă e gol, nu apare nimic sub titlu.",
+    },
+    {
+      name: "story",
+      title: "Povestea",
+      type: "array",
+      of: [{ type: "storyBlock" }],
+      description: "Capitolele din coloana din dreapta, în ordinea afișării.",
+    },
+    {
+      name: "closing",
+      title: "Citatul de final",
+      type: "text",
+      rows: 4,
+      description: "Paragraful evidențiat, după ultimul capitol.",
+    },
+    { name: "timelineTitle", title: "Parcurs profesional — titlu", type: "string" },
+    {
+      name: "timelineSubtitle",
+      title: "Parcurs profesional — subtitlu",
+      type: "text",
+      rows: 2,
+      description: "Intrările din parcurs se editează la „Parcurs profesional”.",
+    },
+    { name: "cta", title: "Banda de final", type: "ctaBand" },
+    { name: "seo", title: "Google și titlul din tab", type: "seo" },
+  ],
+  preview: { prepare: () => ({ title: "Pagina Despre mine" }) },
+};
