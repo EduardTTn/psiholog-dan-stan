@@ -39,7 +39,7 @@ export default function Blog() {
                       {cover && (
                         <img
                           className="postCover"
-                          src={cover.width(720).height(420).fit("crop").url()}
+                          src={cover.width(720).height(420).fit("crop").auto("format").url()}
                           alt={post.coverImage?.alt || ""}
                           width="720"
                           height="420"

@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import { useContent } from "../content/context.js";
 
 /**
- * Booking action for one specific service — goes to the Programări page with
- * it preselected, and that page composes the WhatsApp message. Contactul
- * general se face din butonul flotant de WhatsApp.
+ * Buton de programare. Fără `children` afișează eticheta din „Date cabinet”
+ * (butonul din meniu); cu `service` duce la pagina de programări având acel
+ * serviciu preselectat.
  */
 export default function BookButton({
   service = "",
@@ -11,13 +12,14 @@ export default function BookButton({
   className = "cta",
   onClick,
 }) {
+  const { site } = useContent();
   const to = service
     ? `/programari?serviciu=${encodeURIComponent(service)}`
     : "/programari";
 
   return (
     <Link className={className} to={to} onClick={onClick}>
-      {children}
+      {children || site.bookButtonLabel}
     </Link>
   );
 }

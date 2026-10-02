@@ -40,7 +40,17 @@ export default {
       name: "coverImage",
       title: "Imagine principală",
       type: "image",
+      description:
+        "Apare în lista de articole și în capul articolului. Orizontală, de preferat peste 1200px lățime. Sanity o redimensionează singur.",
       options: { hotspot: true },
+      validation: (r) =>
+        r
+          .custom((image) =>
+            image?.asset && !image?.alt
+              ? "Adaugă un text alternativ — ajută cititoarele de ecran și Google."
+              : true
+          )
+          .warning(),
       fields: [
         {
           name: "alt",
@@ -55,6 +65,8 @@ export default {
       name: "body",
       title: "Conținut",
       type: "array",
+      description:
+        "Scrie direct aici. Din meniul de stil alegi „Subtitlu” pentru secțiuni și „Subtitlu mic” pentru întrebări sau pași; „Citat” pentru un exemplu de replică. Poți insera și imagini în text.",
       of: [
         {
           type: "block",

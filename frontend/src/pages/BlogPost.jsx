@@ -121,7 +121,7 @@ export default function BlogPost() {
             {cover && (
               <Reveal className="postHero" as="figure">
                 <img
-                  src={cover.width(1400).url()}
+                  src={cover.width(1520).height(855).fit("crop").auto("format").url()}
                   alt={shown.coverImage?.alt || ""}
                   loading="eager"
                 />

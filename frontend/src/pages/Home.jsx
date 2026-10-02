@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Reveal from "../components/Reveal.jsx";
 import portrait from "../assets/dan-stan.jpg";
-import { fill, useContent } from "../content/context.js";
+import { fill, isTextBadge, useContent } from "../content/context.js";
 import { useDocumentMeta } from "../content/useDocumentMeta.js";
 
 const PersonIcon = () => (
@@ -111,7 +111,12 @@ export default function Home() {
           <div className="cards4">
             {categories.slice(0, 4).map((d) => (
               <Reveal className="card" as="article" key={d.id}>
-                <div className="cardIcon" aria-hidden="true">
+                <div
+                  className={`cardIcon ${
+                    isTextBadge(d.number) ? "cardIconWord" : ""
+                  }`.trim()}
+                  aria-hidden="true"
+                >
                   {d.number}
                 </div>
                 <h3 className="cardTitle">{d.title || d.label}</h3>

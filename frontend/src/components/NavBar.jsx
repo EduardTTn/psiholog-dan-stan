@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import BookButton from "./BookButton.jsx";
 import logo from "../assets/logo.png";
 import { useContent } from "../content/context.js";
 
@@ -32,6 +33,8 @@ export default function NavBar() {
           ))}
         </nav>
 
+        <BookButton className="cta navCta" />
+
         <button
           type="button"
           className="menuBtn"
@@ -59,6 +62,7 @@ export default function NavBar() {
                 {l.label}
               </NavLink>
             ))}
+            <BookButton className="cta mobileCta" onClick={() => setOpen(false)} />
           </div>
         </div>
       )}

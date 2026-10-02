@@ -71,6 +71,7 @@ docs.push({
   whatsapp: site.whatsapp,
   address: site.address,
   hours: site.hours,
+  bookButtonLabel: site.bookButtonLabel,
   whatsappLinkLabel: site.whatsappLinkLabel,
   whatsappGreeting: site.whatsappGreeting,
   metaDescription: site.metaDescription,

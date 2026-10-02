@@ -41,9 +41,23 @@ schimbările sunt doar ciornă — site-ul rămâne neatins, deci poți lucra li
 exemplu „Sunt {nume}, {titluMic}.” devine „Sunt Dan Stan, psiholog clinician.”
 Dacă îți schimbi titlul profesional, se schimbă în toate paragrafele deodată.
 
-**Un articol nou de blog** apare pe site doar după ce are titlu, *slug*
-(adresa din link — se generează cu butonul de lângă câmp) și o dată de
-publicare care nu e în viitor.
+## Cum adaugi un articol pe blog
+
+1. *Articole de blog* → **Create**.
+2. **Titlu**, apoi apasă **Generate** lângă *Link (slug)* — se completează singur
+   din titlu. Slugul e adresa articolului, deci nu îl mai schimba după ce
+   articolul a fost publicat și distribuit.
+3. **Data publicării** e completată cu ziua de azi. O dată în viitor ține
+   articolul ascuns până atunci — util dacă vrei să îl pregătești din timp.
+4. **Rezumat**: 2–3 rânduri. Apar în lista de articole și în Google.
+5. **Imagine principală**: trage o fotografie orizontală în casetă și scrie-i un
+   *text alternativ* (ce se vede în poză). Sanity o redimensionează singur.
+6. **Conținut**: scrie normal. Din meniul de stil alegi „Subtitlu” pentru
+   secțiuni, „Subtitlu mic” pentru întrebări sau pași, „Citat” pentru o replică
+   dată ca exemplu. Poți adăuga liste și imagini în text.
+7. **Publish**.
+
+Articolul apare pe site în aproximativ un minut, primul în listă.
 
 **Ordinea** listelor (categorii, cabinete, parcurs, rețele sociale) se dă din
 câmpul *Ordine*: numărul mai mic apare mai sus. Lasă spații între numere (10,

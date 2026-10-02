@@ -51,6 +51,16 @@ export function priceValue(price) {
   return match ? Number(match[0]) : Number.POSITIVE_INFINITY;
 }
 
+/**
+ * Eticheta unei categorii poate fi un număr („01”) sau un cuvânt („PACHET”).
+ * Un cuvânt nu încape la corpul de literă al numerelor, așa că primește altul —
+ * cutia rămâne identică.
+ */
+export function isTextBadge(value) {
+  const text = String(value ?? "").trim();
+  return text.length > 0 && !/^\d{1,2}$/.test(text);
+}
+
 /** Services of one category, cheapest first. */
 export function servicesOf(services, categoryId) {
   return services

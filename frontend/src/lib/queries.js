@@ -2,7 +2,7 @@
 export const CONTENT_QUERY = /* groq */ `{
   "site": *[_type == "siteSettings"][0]{
     name, title, cabinet, email, phone, whatsapp, address, hours, emergencyNote,
-    whatsappLinkLabel, whatsappGreeting, metaDescription
+    bookButtonLabel, whatsappLinkLabel, whatsappGreeting, metaDescription
   },
   "navigation": *[_type == "navigation"][0]{
     primary[]{ label, path }

@@ -2,13 +2,15 @@ export const site = {
   name: "Dan Stan",
   title: "Psiholog clinician",
   cabinet: "Cabinet Individual de Psihologie Dan Stan",
-  email: "contact@psiholog-stan-dan.ro",
+  email: "psih.danstan@gmail.com",
   phone: "0740 278 926",
   whatsapp: "40740278926",
   address: "Constanța · Strada Zburătorului 4 · Mangalia · Strada Ștefan cel Mare 8",
   hours: "Luni–Vineri · 09:00–18:00",
   emergencyNote:
     "În situații de urgență sau criză, contactați imediat serviciile de urgență (112).",
+  // Butonul de programare din meniu.
+  bookButtonLabel: "Programează-te",
   // Linkul de WhatsApp din subsol și mesajul cu care se deschide.
   whatsappLinkLabel: "WhatsApp",
   whatsappGreeting: "Bună ziua! Aș dori o programare.",

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Reveal from "../components/Reveal.jsx";
-import { useContent } from "../content/context.js";
+import { isTextBadge, useContent } from "../content/context.js";
 import { useDocumentMeta } from "../content/useDocumentMeta.js";
 
 export default function Servicii() {
@@ -30,7 +30,13 @@ export default function Servicii() {
           {categories.map((d) => (
             <Reveal className="domainCard" as="article" key={d.id}>
               <div className="domainSide">
-                <span className="domainNumber">{d.number}</span>
+                <span
+                  className={`domainNumber ${
+                    isTextBadge(d.number) ? "domainNumberWord" : ""
+                  }`.trim()}
+                >
+                  {d.number}
+                </span>
               </div>
               <div className="domainMain">
                 <h2 className="domainTitle">{d.title || d.label}</h2>

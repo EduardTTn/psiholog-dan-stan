@@ -55,6 +55,24 @@ blocate și site-ul rămâne pe conținutul local.
 | `npm run deploy` | Publică studioul online |
 | `npm run import` | Completează câmpurile lipsă din `frontend/src/data/` (nu suprascrie) |
 | `npm run import -- --force` | Rescrie tot conținutul din cod — pierde editările |
+| `npm run check` | Verifică modelul de conținut (schemă ↔ query ↔ valori implicite), fără să atingă Sanity |
+| `node scripts/import-article.mjs <fișier.md>` | Urcă un articol scris în Markdown |
+
+### Articole din Markdown
+
+Pentru un articol primit ca text, în loc să fie lipit bucată cu bucată în studio:
+
+```bash
+cd sanity
+node scripts/import-article.mjs ../articol.md --cover ../poza.jpg
+# opțional: --credit "Foto: Autor / Unsplash" --alt "Ce se vede în fotografie"
+```
+
+Fișierul începe cu `# Titlu`; `##` devine subtitlu, `###` subtitlu mic, iar un
+rând închis între ghilimele românești devine citat. Slugul se calculează din
+titlu, iar id-ul documentului din slug — deci re-rularea actualizează același
+articol, nu îl dublează. `--draft` îl urcă cu dată în viitor, adică ascuns pe
+site până îi schimbi data din studio.
 
 Modificările publicate apar pe site în aproximativ un minut (răspunsurile
 sunt servite din CDN). Nu e nevoie de redeploy al site-ului.
