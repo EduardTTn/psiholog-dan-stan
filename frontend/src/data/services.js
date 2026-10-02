@@ -1,6 +1,6 @@
 export const GROUPS = [
-  { id: "evaluare", label: "Evaluare psihologică clinică" },
   { id: "consiliere", label: "Consiliere psihologică" },
+  { id: "evaluare", label: "Evaluare psihologică clinică" },
   { id: "munca", label: "Psihologia muncii și organizațională" },
   { id: "securitate", label: "Psihologie aplicată în securitatea națională" },
 ];
@@ -160,8 +160,21 @@ export const COMPANY_SERVICES = [
 
 export const DOMAINS = [
   {
-    id: "evaluare",
+    id: "consiliere",
     number: "01",
+    title: "Consiliere psihologică",
+    body: "Un spațiu profesional și confidențial pentru explorarea dificultăților emoționale, personale, profesionale sau relaționale și pentru dezvoltarea resurselor personale. Ședințele se pot desfășura la cabinet sau online.",
+    highlights: [
+      "Ședințe individuale de consiliere psihologică",
+      "Consiliere psihologică online",
+      "Gestionarea stresului",
+      "Dezvoltare personală",
+      "Orientare profesională",
+    ],
+  },
+  {
+    id: "evaluare",
+    number: "02",
     title: "Psihologie clinică — evaluare psihologică",
     body: "Evaluări psihologice individualizate, realizate prin interviu clinic, observație și instrumente psihologice standardizate, adaptate vârstei persoanei și scopului evaluării. Concluziile și, după caz, recomandările sunt discutate la finalul procesului.",
     highlights: [
@@ -171,19 +184,6 @@ export const DOMAINS = [
       "Adopție, plasament și FIV",
       "Comisia de Expertiză Medicală a Capacității de Muncă",
       "Evaluare la domiciliu pentru persoane nedeplasabile",
-    ],
-  },
-  {
-    id: "consiliere",
-    number: "02",
-    title: "Consiliere psihologică",
-    body: "Un spațiu profesional și confidențial pentru explorarea dificultăților emoționale, personale, profesionale sau relaționale și pentru dezvoltarea resurselor personale. Ședințele se pot desfășura la cabinet sau online.",
-    highlights: [
-      "Ședințe individuale de consiliere psihologică",
-      "Consiliere psihologică online",
-      "Gestionarea stresului",
-      "Dezvoltare personală",
-      "Orientare profesională",
     ],
   },
   {

@@ -10,7 +10,7 @@ export const PARCURS = [
   {
     period: "În curs de finalizare",
     title: "Psihoterapeut sistemic de cuplu și familie",
-    meta: "Programul de Formare în Psihoterapie — Intervenție psihoterapeutică sistemică în problematicile cuplului și familiei. Coordonator program: conf. univ. dr. Nicu-Ionel Sava.",
+    meta: "Programul de Formare în Psihoterapie — Intervenție psihoterapeutică sistemică în problematicile cuplului și familiei. Coordonator program: conf. univ. dr. Nicu-Ionel Sava",
   },
   {
     period: "În curs de finalizare",

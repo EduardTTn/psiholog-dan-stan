@@ -17,13 +17,13 @@ export const pages = {
       "Terapie care se simte sigură, colaborativă și practică — ca să treci de la înțelegere la schimbare reală.",
     aboutParagraphs: [
       "Sunt {nume}, {titluMic}. Ofer servicii de evaluare psihologică și consiliere psihologică, în conformitate cu competențele profesionale și reglementările aplicabile.",
-      "Lucrez cu adulți care traversează perioade de stres, anxietate sau schimbare, dar și cu persoane care au nevoie de o evaluare psihologică pentru diverse proceduri instituționale sau profesionale.",
+      "Lucrez cu adulți și cu copii — fie că traversează perioade de stres, anxietate sau schimbare, fie că au nevoie de o evaluare psihologică pentru diverse proceduri instituționale sau profesionale.",
     ],
     features: [
       {
         icon: "person",
-        title: "Abordare individualizată",
-        body: "Ședințe 1:1, adaptate ritmului și nevoilor fiecărei persoane.",
+        title: "Abordare personalizată",
+        body: "Ședințe individuale (1:1) sau de grup, adaptate ritmului și nevoilor fiecărei persoane.",
       },
       {
         icon: "screen",
@@ -37,7 +37,7 @@ export const pages = {
     servicesPricesLabel: "Lista de tarife",
     servicesTitle: "Servicii",
     servicesSubtitle:
-      "Cinci direcții de lucru, de la consiliere psihologică la evaluări solicitate de instituții și angajatori.",
+      "Patru direcții de lucru, de la consiliere psihologică la evaluări solicitate de instituții și angajatori.",
     cta: {
       title: "Facem primul pas împreună?",
       body: "Scrie-mi pe WhatsApp și stabilim ziua și ora potrivite pentru tine, la cabinet sau online.",

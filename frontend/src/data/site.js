@@ -9,8 +9,8 @@ export const site = {
   hours: "Luni–Vineri · 09:00–18:00",
   emergencyNote:
     "În situații de urgență sau criză, contactați imediat serviciile de urgență (112).",
-  // Butonul de programare din meniu.
-  bookButtonLabel: "Programează-te",
+  // Butonul de contact din meniu și din benzile de final: deschide WhatsApp.
+  contactButtonLabel: "Contact",
   // Linkul de WhatsApp din subsol și mesajul cu care se deschide.
   whatsappLinkLabel: "WhatsApp",
   whatsappGreeting: "Bună ziua! Aș dori o programare.",

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import BookButton from "../components/BookButton.jsx";
+import ContactButton from "../components/ContactButton.jsx";
 import Reveal from "../components/Reveal.jsx";
 import { servicesOf, useContent } from "../content/context.js";
 import { useDocumentMeta } from "../content/useDocumentMeta.js";
@@ -135,6 +136,7 @@ export default function Tarife() {
               <p key={paragraph.slice(0, 40)}>{paragraph}</p>
             ))}
             <p className="infoNoteContact">{copy.infoContact}</p>
+            <ContactButton />
           </Reveal>
         </div>
       </section>

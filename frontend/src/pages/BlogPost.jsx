@@ -1,6 +1,7 @@
 import { PortableText } from "@portabletext/react";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import ContactButton from "../components/ContactButton.jsx";
 import Reveal from "../components/Reveal.jsx";
 import { useContent } from "../content/context.js";
 import { useDocumentMeta } from "../content/useDocumentMeta.js";
@@ -147,6 +148,7 @@ export default function BlogPost() {
                 <h2 className="ctaBandTitle">{copy.postCta.title}</h2>
                 <p className="ctaBandBody">{copy.postCta.body}</p>
               </div>
+              <ContactButton />
             </Reveal>
           </div>
         </section>

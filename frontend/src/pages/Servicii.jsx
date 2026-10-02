@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ContactButton from "../components/ContactButton.jsx";
 import Reveal from "../components/Reveal.jsx";
 import { isTextBadge, useContent } from "../content/context.js";
 import { useDocumentMeta } from "../content/useDocumentMeta.js";
@@ -62,6 +63,7 @@ export default function Servicii() {
               <h2 className="ctaBandTitle">{copy.cta.title}</h2>
               <p className="ctaBandBody">{copy.cta.body}</p>
             </div>
+            <ContactButton />
           </Reveal>
         </div>
       </section>

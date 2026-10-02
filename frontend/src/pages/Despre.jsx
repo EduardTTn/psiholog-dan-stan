@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ContactButton from "../components/ContactButton.jsx";
 import Reveal from "../components/Reveal.jsx";
 import portrait from "../assets/dan-stan.jpg";
 import { useContent } from "../content/context.js";
@@ -87,6 +88,7 @@ export default function Despre() {
               <h2 className="ctaBandTitle">{copy.cta.title}</h2>
               <p className="ctaBandBody">{copy.cta.body}</p>
             </div>
+            <ContactButton />
           </Reveal>
         </div>
       </section>

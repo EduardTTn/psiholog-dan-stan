@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import { useContent } from "../content/context.js";
 
 /**
- * Buton de programare. Fără `children` afișează eticheta din „Date cabinet”
- * (butonul din meniu); cu `service` duce la pagina de programări având acel
- * serviciu preselectat.
+ * Buton de programare pentru un serviciu anume: duce la pagina de programări
+ * cu acel serviciu preselectat. Contactul general se face din butonul „Contact”
+ * și din butonul flotant de WhatsApp.
  */
 export default function BookButton({
   service = "",
@@ -12,14 +11,13 @@ export default function BookButton({
   className = "cta",
   onClick,
 }) {
-  const { site } = useContent();
   const to = service
     ? `/programari?serviciu=${encodeURIComponent(service)}`
     : "/programari";
 
   return (
     <Link className={className} to={to} onClick={onClick}>
-      {children || site.bookButtonLabel}
+      {children}
     </Link>
   );
 }

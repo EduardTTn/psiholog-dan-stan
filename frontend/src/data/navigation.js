@@ -7,10 +7,10 @@ export const navigation = {
   primary: [
     { path: "/", label: "Acasă" },
     { path: "/despre", label: "Despre mine" },
+    { path: "/blog", label: "Blog" },
     { path: "/servicii", label: "Servicii" },
     { path: "/tarife", label: "Tarife" },
     { path: "/programari", label: "Programări" },
-    { path: "/blog", label: "Blog" },
   ],
 };
 

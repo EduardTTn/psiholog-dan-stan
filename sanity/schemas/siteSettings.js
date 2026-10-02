@@ -60,10 +60,11 @@ export default {
       description: "Ex: Luni–Vineri · 09:00–18:00",
     },
     {
-      name: "bookButtonLabel",
-      title: "Textul butonului de programare",
+      name: "contactButtonLabel",
+      title: "Textul butonului de contact",
       type: "string",
-      description: "Butonul din meniu, care duce la pagina de programări.",
+      description:
+        "Butonul din meniu și de la finalul paginilor. Deschide WhatsApp, la fel ca butonul verde flotant.",
     },
     {
       name: "whatsappLinkLabel",
